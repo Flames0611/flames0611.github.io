@@ -1,0 +1,10 @@
+<camera device-position="back" style="width: 100%; height: 300px;"></camera>
+    <view style="height:15px"></view>
+    <button type="primary" bindtap="startRecord">开始录像</button>
+    <view style="height:15px"></view>
+    <button type="primary" bindtap="stopRecord">结束录像</button>
+    <view style="height:15px"></view>
+    <image wx:if="{{cover}}" mode="widthFix" src="{{cover}}"></image>
+    <view style="height:15px"></view>
+    <video wx:if="{{video}}" class="video" src="{{video}}"></video>
+    <view style="height:15px"></view>
